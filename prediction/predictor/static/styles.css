@@ -1,0 +1,126 @@
+/* Reset all margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient Background */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 20px;
+    overflow-x: hidden;
+}
+
+/* Fixed Header */
+h1 {
+   
+    /* top: 20px; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    border: 1px rgb(72, 72, 72) solid;
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 10;
+}
+
+/* Container for form and prediction */
+
+/* Title inside the container */
+h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin-right: 20px;
+}
+
+/* Input and Button Styling */
+form input, form button {
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Input focus effect */
+form input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Prediction Result Styling */
+p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #2e7d32;
+    background-color: #e8f5e9;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #4CAF50;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Error Message Styling */
+.error-message {
+    color: #f44336;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #fbe9e7;
+    border: 1px solid #f44336;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* For mobile screens, stack the elements vertically */
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 100px; /* Adjusted top margin for smaller screens */
+    }
+
+    form, p {
+        width: 100%;
+        max-width: 100%;
+    }
+}
